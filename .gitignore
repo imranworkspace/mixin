@@ -1,2 +1,4 @@
 myenv/
 mixin_ex/mixin_ex/__pycache__/*.pyc
+mixin_ex/api/__pycache__/*.pyc
+mixin_ex/api/migrations/__pycache__/*.pyc
