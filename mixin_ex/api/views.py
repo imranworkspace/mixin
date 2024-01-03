@@ -11,4 +11,10 @@ class StudentList(ListModelMixin,GenericAPIView):
 
     def get(self,request,*args,**kwargs):
         return self.list(request,*args,**kwargs)
-    
+
+class StudentCreate(CreateModelMixin,GenericAPIView):
+    queryset=StudentModel.objects.all()
+    serializer_class=StudentSerializers
+
+    def post(self,request,*args,**kwargs):
+        return self.create(request,*args,**kwargs)
